@@ -11,7 +11,11 @@ pipeline {
         sleep 20
         sh 'printenv'
         sh 'pwd'
+        acceptGitLabMR(mergeCommitMessage: 'sdfs')
       }
     }
+  }
+  environment {
+    deploy = 'product'
   }
 }

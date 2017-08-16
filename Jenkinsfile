@@ -9,8 +9,8 @@ pipeline {
     stage('check') {
       steps {
         sleep 20
-        sh printenv
-        sh pwd
+        sh 'printenv'
+        sh 'pwd'
       }
     }
   }
